@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Status</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> <!-- Monster Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <style>
         body {
             background: url('https://cdn.discordapp.com/attachments/1261181113775423561/1320314719483068496/AdobeStock_627913297.jpeg?ex=67692667&is=6767d4e7&hm=5f1e67f7bce151bd93dfd71a7e185d8eda5aa60b32c7720320b74037eedd7cf9&') no-repeat center center fixed;
@@ -18,7 +18,7 @@
             height: 100vh;
         }
         .container {
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            background-color: rgba(0, 0, 0, 0.7);
             border-radius: 15px;
             padding: 20px;
             width: 300px;
@@ -28,9 +28,9 @@
         h1 {
             font-family: 'Bungee', cursive;
             font-size: 24px;
-            color: #FF69B4; /* Pink/Violet for title */
+            color: #FF69B4;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 8px rgba(255, 105, 180, 0.8); /* Glow effect */
+            text-shadow: 2px 2px 8px rgba(255, 105, 180, 0.8);
         }
         p {
             font-size: 14px;
@@ -39,7 +39,7 @@
             margin-top: 10px;
         }
         a {
-            color: #fff; /* White for the link */
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
             font-size: 14px;
@@ -48,7 +48,7 @@
             text-decoration: underline;
         }
         .button {
-            background-color: #008000; /* Slightly darker green */
+            background-color: #008000;
             border: none;
             color: white;
             padding: 10px 20px;
@@ -57,41 +57,51 @@
             cursor: pointer;
             border-radius: 8px;
             margin-top: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.5); /* Adjusted shadow */
+            box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.5);
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .button:hover {
-            background-color: #006400; /* Darker green on hover */
-            transform: translateY(-2px); /* Slight lift effect */
+            background-color: #006400;
+            transform: translateY(-2px);
         }
         .button:before {
-            content: '\2714'; /* Check mark */
+            content: '\2714';
             font-size: 16px;
             margin-right: 5px;
         }
         .update-message {
             font-size: 12px;
-            color: #888; /* Gray for the update message */
+            color: #888;
             margin-top: 15px;
         }
-        audio {
+        .audio-container {
             margin-top: 20px;
+            background-color: rgba(255, 0, 0, 0.3); /* Red transparent background */
+            border: 2px solid rgba(255, 0, 0, 0.6); /* Darker red border */
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5); /* Glow effect */
+        }
+        .audio-container audio {
             width: 100%;
             outline: none;
+            border: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>@lucienbladi is not terminated</h1> <!-- Pink/violet title -->
+        <h1>@lucienbladi is not terminated</h1>
         <p><a href="https://guns.lol/lucien" target="_blank">https://guns.lol/lucien</a></p>
-        <button class="button">Active</button> <!-- Slightly darker green button -->
-        <p class="update-message">If I get termed, this will be updated.</p> <!-- Gray update message -->
-        <!-- Audio player -->
-        <audio controls autoplay>
-            <source src="https://cdn.discordapp.com/attachments/1261181113775423561/1320311849971089478/s-schizphrenia_pt._2.mp3?ex=676923bb&is=6767d23b&hm=25522de88e3e8e984a47f83828fb8144bf96e5f584a5c5fa5dba871c2d816fd4&" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <button class="button">Active</button>
+        <p class="update-message">If I get termed, this will be updated.</p>
+        <!-- Styled audio player -->
+        <div class="audio-container">
+            <audio controls autoplay>
+                <source src="https://cdn.discordapp.com/attachments/1261181113775423561/1320311849971089478/s-schizphrenia_pt._2.mp3?ex=676923bb&is=6767d23b&hm=25522de88e3e8e984a47f83828fb8144bf96e5f584a5c5fa5dba871c2d816fd4&" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </div>
 </body>
 </html>
